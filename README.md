@@ -8,7 +8,7 @@ Shuhei Tarashima, Muhammad Abdul Haq, Yushan Wang, Norio Tagawa
 
 We present Widely Applicable Strong Baseline (WASB), a Sports Ball Detection and Tracking (SBDT) baseline that can be applied to wide range of sports categories :soccer: :tennis: :badminton: :volleyball: :basketball: .
 
-https://github.com/nttcom/WASB-SBDT/assets/63090948/d76b8e7a-fe63-42b6-a40e-4fef4c62d63a
+https://github.com/nttcom/WASB-SBDT/assets/63090948/8889ef53-62c7-4c97-9b33-8bf386489ba1
 
 ## News
 
