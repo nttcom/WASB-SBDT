@@ -53,19 +53,38 @@ Here we show the evaluation commands to reproduce the results of Table 2 and Tab
 
 ```
 # Soccer
-python3 main.py --config-name=eval dataset=soccer model=wasb detector.model_path=../pretrained_weights/wasb_soccer_best.pth.tar tracker.max_disp=300
+python3 main.py --config-name=eval dataset=soccer model=wasb detector.model_path=../pretrained_weights/wasb_soccer_best.pth.tar
 
 # Tennis
-python3 main.py --config-name=eval dataset=tennis model=wasb detector.model_path=../pretrained_weights/wasb_tennis_best.pth.tar tracker.max_disp=300
+python3 main.py --config-name=eval dataset=tennis model=wasb detector.model_path=../pretrained_weights/wasb_tennis_best.pth.tar
 
 # Badminton
-python3 main.py --config-name=eval dataset=badminton model=wasb detector.model_path=../pretrained_weights/wasb_badminton_best.pth.tar tracker.max_disp=300
+python3 main.py --config-name=eval dataset=badminton model=wasb detector.model_path=../pretrained_weights/wasb_badminton_best.pth.tar
 
 # Volleyball
 python3 main.py --config-name=eval dataset=volleyball model=wasb detector.model_path=../pretrained_weights/wasb_volleyball_best.pth.tar
 
 # Basketball
-python3 main.py --config-name=eval dataset=basketball model=wasb detector.model_path=../pretrained_weights/wasb_basketball_best.pth.tar tracker.max_disp=160
+python3 main.py --config-name=eval dataset=basketball model=wasb detector.model_path=../pretrained_weights/wasb_basketball_best.pth.tar
+```
+
+### WASB (Step=1)
+
+```
+# Soccer
+python3 main.py --config-name=eval dataset=soccer model=wasb detector.model_path=../pretrained_weights/wasb_soccer_best.pth.tar detector.step=1
+
+# Tennis
+python3 main.py --config-name=eval dataset=tennis model=wasb detector.model_path=../pretrained_weights/wasb_tennis_best.pth.tar detector.step=1
+
+# Badminton
+python3 main.py --config-name=eval dataset=badminton model=wasb detector.model_path=../pretrained_weights/wasb_badminton_best.pth.tar detector.step=1
+
+# Volleyball
+python3 main.py --config-name=eval dataset=volleyball model=wasb detector.model_path=../pretrained_weights/wasb_volleyball_best.pth.tar detector.step=1
+
+# Basketball
+python3 main.py --config-name=eval dataset=basketball model=wasb detector.model_path=../pretrained_weights/wasb_basketball_best.pth.tar detector.step=1
 ```
 
 ## Training
