@@ -1,0 +1,15 @@
+defaults:
+        - _self_
+        - runner: eval
+        - dataset: badminton
+        - model: wasb
+        - dataloader: default
+        - detector: tracknetv2
+        - transform: default
+        - tracker: online
+hydra:
+  run:
+    dir: /root/outputs/${hydra.job.name}/${now:%Y-%m-%d_%H-%M-%S}
+output_dir:
+seed: 1234
+

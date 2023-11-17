@@ -1,0 +1,5 @@
+name: heatmap
+sub_name: focal
+gamma: 2.0
+auto_weight: False
+scales: [0]

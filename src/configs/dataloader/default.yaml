@@ -1,0 +1,25 @@
+train: False
+test: False
+train_clip: False
+test_clip: True
+#inference_video: True
+sampler:
+        name: random
+        train_batch_size: 8
+        train_shuffle_batch: True
+        train_drop_last: True
+        test_batch_size: 8
+        test_shuffle_batch: False
+        test_drop_last: False
+        inference_video_batch_size: 8
+        inference_video_shuffle_batch: False
+        inference_video_drop_last: False
+train_num_workers: 8
+test_num_workers: 8
+inference_video_num_workers: 8
+heatmap:
+        name: binary_fixed_size
+        sigmas: [2.5]
+        mags: [1.0]
+        min_value: 0.6
+

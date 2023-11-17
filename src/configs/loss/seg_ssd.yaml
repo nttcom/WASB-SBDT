@@ -1,0 +1,8 @@
+name: segmentation
+sub_name: ssd
+auto_weight: False
+scales: [0]
+neg_factor: 3
+hnm_batch: True
+background_dim: 0
+

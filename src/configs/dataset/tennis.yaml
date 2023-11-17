@@ -1,0 +1,22 @@
+name: tennis
+ext: '.jpg'
+root_dir: /root/datasets/tennis
+csv_filename: 'Label.csv'
+visible_flags: [1,2]
+train:
+  matches: [ 'game1', 
+             'game2', 
+             'game3', 
+             'game4', 
+             'game5', 
+             'game6',
+             'game7']
+  num_clip_ratio: 1.0
+  refine_npz_path: 
+test:
+  matches: [ 'game8', 
+             'game9', 
+             'game10']
+  num_clip_ratio: 1.0
+  refine_npz_path:
+

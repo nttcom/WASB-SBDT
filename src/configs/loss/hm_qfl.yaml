@@ -1,0 +1,5 @@
+name: heatmap
+sub_name: quality_focal
+auto_weight: False
+scales: [0]
+beta: 2.0

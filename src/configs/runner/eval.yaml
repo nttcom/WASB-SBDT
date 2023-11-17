@@ -1,0 +1,15 @@
+name: eval
+device: cuda
+gpus: [0,1,2,3]
+vis_result: False
+vis_hm: False
+vis_traj: False
+#best_model_name: best_model.pth.tar
+#model_dir: 
+model_path: 
+split: test
+fp1_filename: # dummy
+eval:
+  score_threshold: 0.5
+  dist_threshold: 4
+

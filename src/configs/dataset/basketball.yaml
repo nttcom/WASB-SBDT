@@ -1,0 +1,13 @@
+name: basketball
+root_dir: /root/datasets/basketball
+video_dirname: videos
+anno_dirname: ball-annos
+img_ext: '.png'
+#video_ext: '.avi'
+train:
+  videos:
+  num_clip_ratio: 1.0
+test:
+  videos: ['21800974','21801076','21801079','21800970','21800965','21801165','21801071','21801049','21801070','21800977','21801162','21801120','21801007','21801078','21801123','21801188','21801038','21800978','21801159','21801152','21801204','21801229','21800988','21801077','21801153','21801063','21801096','21801105','21801050','21801129',] # from ../datasets/basketball/test_video_ids
+  num_clip_ratio: 1.0
+

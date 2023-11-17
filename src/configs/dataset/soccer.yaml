@@ -1,0 +1,20 @@
+name: soccer
+root_dir: /root/datasets/soccer
+video_dirname: videos
+frame_dirname: frames
+anno_dirname: annos
+img_ext: '.png'
+video_ext: '.avi'
+train:
+  videos:
+    - ID-1
+    - ID-2
+    - ID-3
+    - ID-4
+  num_clip_ratio: 1.0
+test:
+  videos:
+    - ID-5
+    - ID-6
+  num_clip_ratio: 1.0
+

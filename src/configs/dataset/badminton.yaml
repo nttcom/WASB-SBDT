@@ -1,0 +1,38 @@
+name: badminton
+root_dir: /root/datasets/badminton
+video_dirname: video
+frame_dirname: frame
+csv_dirname: csv
+train:
+  matches : [ 'match1', 
+              'match2', 
+              'match3', 
+              'match4', 
+              'match5', 
+              'match6',
+              'match7',
+              'match8', 
+              'match9',
+              'match10', 
+              'match11', 
+              'match12', 
+              'match13', 
+              'match14', 
+              'match15', 
+              'match16', 
+              'match17', 
+              'match18', 
+              'match19',
+              'match20', 
+              'match21', 
+              'match22', 
+              'match23',
+              'match24', 
+              'match25', 
+              'match26']
+  num_clip_ratio: 1.0
+test:
+  matches: ['test_match1', 
+            'test_match2', 
+            'test_match3']
+  num_clip_ratio: 1.0

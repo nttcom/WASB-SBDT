@@ -1,0 +1,4 @@
+name: heatmap
+sub_name: wbce
+auto_weight: False
+scales: [0]

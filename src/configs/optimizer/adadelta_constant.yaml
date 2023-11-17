@@ -1,0 +1,7 @@
+name: adadelta
+learning_rate: 1.0
+weight_decay: 0
+scheduler:
+  name: constant
+  factor: 1.0
+

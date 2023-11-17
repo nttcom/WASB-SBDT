@@ -1,0 +1,38 @@
+# https://github.com/jjjkkkjjj/pytorch_SSD/blob/master/ssd/train/loss.py
+# https://github.com/NVIDIA/DeepLearningExamples/blob/master/PyTorch/Detection/SSD/ssd/model.py
+
+from torch import nn
+import torch
+import math
+import torch.nn.functional as F
+
+class SSDLoss(nn.Module):
+    def __init__(self, alpha=1, loc_loss=None, conf_loss=None):
+        super().__init__()
+
+        self.alpha = alpha
+        #self.loc_loss = LocalizationLoss() if loc_loss is None else loc_loss
+        self.conf_loss = ConfidenceLoss() if conf_loss is None else conf_loss
+
+    def forward(self, predicts, targets):
+        conf_loss = self.conf_loss(predicts, targets)
+        return conf_loss
+
+class ConfidenceLoss(nn.Module):
+    def __init__(self, neg_factor=3, hnm_batch=False, background_dim=0):
+        """
+        :param neg_factor: int, the ratio(1(pos): neg_factor) to learn pos and neg for hard negative mining
+        :param hnm_batch: bool, whether to do hard negative mining for each batch
+        """
+        super().__init__()
+        self._neg_factor     = neg_factor
+        self._hnm_batch      = hnm_batch
+        self._background_dim = background_dim
+        self.loss = nn.CrossEntropyLoss()
+        #self.loss = nn.BCEWithLogitsLoss()
+
+    def forward(self, predicts, targets):
+        con = self.loss(predicts, targets)
+        #print(con)
+        return con 
+

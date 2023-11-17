@@ -1,0 +1,8 @@
+name: adadelta
+learning_rate: 1.0
+weight_decay: 0
+scheduler:
+  name: multistep
+  stepsize: [10,20]
+  gamma: 0.1
+
