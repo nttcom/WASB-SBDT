@@ -49,7 +49,7 @@ We also provide a setup script to download all the listed models at once. Run ``
 
 Here we show the evaluation commands to reproduce the results of Table 2 and Table 3 in [our paper](https://arxiv.org/abs/2311.05237).
 
-### WASB (Step=3)
+### [WASB (Ours, Step=3)](https://arxiv.org/abs/2311.05237)
 
 ```
 # Soccer
@@ -68,7 +68,7 @@ python3 main.py --config-name=eval dataset=volleyball model=wasb detector.model_
 python3 main.py --config-name=eval dataset=basketball model=wasb detector.model_path=../pretrained_weights/wasb_basketball_best.pth.tar
 ```
 
-### WASB (Step=1)
+### [WASB (Ours, Step=1)](https://arxiv.org/abs/2311.05237)
 
 ```
 # Soccer
@@ -85,6 +85,63 @@ python3 main.py --config-name=eval dataset=volleyball model=wasb detector.model_
 
 # Basketball
 python3 main.py --config-name=eval dataset=basketball model=wasb detector.model_path=../pretrained_weights/wasb_basketball_best.pth.tar detector.step=1
+```
+
+### [MonoTrack [CVPRW2022]](https://ieeexplore.ieee.org/document/9857202)
+
+```
+# Soccer
+python3 main.py --config-name=eval dataset=soccer model=monotrack detector.postprocessor.use_hm_weight=False detector.model_path=../pretrained_weights/monotrack_soccer_best.pth.tar tracker=intra_frame_peak
+
+# Tennis
+python3 main.py --config-name=eval dataset=tennis model=monotrack detector.postprocessor.use_hm_weight=False detector.model_path=../pretrained_weights/monotrack_tennis_best.pth.tar tracker=intra_frame_peak
+
+# Badminton
+python3 main.py --config-name=eval dataset=badminton model=monotrack detector.postprocessor.use_hm_weight=False detector.model_path=../pretrained_weights/monotrack_badminton_best.pth.tar tracker=intra_frame_peak
+
+# Volleyball
+python3 main.py --config-name=eval dataset=volleyball model=monotrack detector.postprocessor.use_hm_weight=False detector.model_path=../pretrained_weights/monotrack_volleyball_best.pth.tar tracker=intra_frame_peak
+
+# Basketball
+python3 main.py --config-name=eval dataset=basketball model=monotrack detector.postprocessor.use_hm_weight=False detector.model_path=../pretrained_weights/monotrack_basketball_best.pth.tar tracker=intra_frame_peak
+```
+
+### [ResTrackNetV2](https://arxiv.org/abs/2311.05237)
+
+```
+# Soccer
+python3 main.py --config-name=eval dataset=soccer model=restracknetv2 detector.postprocessor.use_hm_weight=False detector.model_path=../pretrained_weights/restracknetv2_soccer_best.pth.tar tracker=intra_frame_peak
+
+# Tennis
+python3 main.py --config-name=eval dataset=tennis model=restracknetv2 detector.postprocessor.use_hm_weight=False detector.model_path=../pretrained_weights/restracknetv2_tennis_best.pth.tar tracker=intra_frame_peak
+
+# Badminton
+python3 main.py --config-name=eval dataset=badminton model=restracknetv2 detector.postprocessor.use_hm_weight=False detector.model_path=../pretrained_weights/restracknetv2_badminton_best.pth.tar tracker=intra_frame_peak
+
+# Volleyball
+python3 main.py --config-name=eval dataset=volleyball model=restracknetv2 detector.postprocessor.use_hm_weight=False detector.model_path=../pretrained_weights/restracknetv2_volleyball_best.pth.tar tracker=intra_frame_peak
+
+# Basketball
+python3 main.py --config-name=eval dataset=basketball model=restracknetv2 detector.postprocessor.use_hm_weight=False detector.model_path=../pretrained_weights/restracknetv2_basketball_best.pth.tar tracker=intra_frame_peak
+```
+
+### [TrackNetV2 [ICPAI2020]](https://ieeexplore.ieee.org/document/9302757)
+
+```
+# Soccer
+python3 main.py --config-name=eval dataset=soccer model=tracknetv2 detector.postprocessor.use_hm_weight=False detector.model_path=../pretrained_weights/tracknetv2_soccer_best.pth.tar tracker=intra_frame_peak
+
+# Tennis
+python3 main.py --config-name=eval dataset=tennis model=tracknetv2 detector.postprocessor.use_hm_weight=False detector.model_path=../pretrained_weights/tracknetv2_tennis_best.pth.tar tracker=intra_frame_peak
+
+# Badminton
+python3 main.py --config-name=eval dataset=badminton model=tracknetv2 detector.postprocessor.use_hm_weight=False detector.model_path=../pretrained_weights/tracknetv2_badminton_best.pth.tar tracker=intra_frame_peak
+
+# Volleyball
+python3 main.py --config-name=eval dataset=volleyball model=tracknetv2 detector.postprocessor.use_hm_weight=False detector.model_path=../pretrained_weights/tracknetv2_volleyball_best.pth.tar tracker=intra_frame_peak
+
+# Basketball
+python3 main.py --config-name=eval dataset=basketball model=tracknetv2 detector.postprocessor.use_hm_weight=False detector.model_path=../pretrained_weights/tracknetv2_basketball_best.pth.tar tracker=intra_frame_peak
 ```
 
 ## Training

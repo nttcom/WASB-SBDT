@@ -1,0 +1,12 @@
+name: tracknetv2
+frames_in: 3
+frames_out: 3
+inp_height: 288
+inp_width: 512
+out_height: 288
+out_width: 512
+bilinear: True
+halve_channel: False
+mode: nearest
+rgb_diff: False
+out_scales: [0]

@@ -32,7 +32,7 @@ class TracknetV2Detector(object):
 
         self._2d_input = True
         model_name = cfg['model']['name']
-        if model_name in ['tracknetv2', 'resunet2d', 'hrnet', 'monotrack', 'changs', 'deepball', 'segball']:
+        if model_name in ['tracknetv2', 'resunet2d', 'hrnet', 'monotrack', 'restracknetv2', 'deepball', 'segball']:
             pass
         else:
             raise ValueError('unknown model_name : {}'.format(model_name))

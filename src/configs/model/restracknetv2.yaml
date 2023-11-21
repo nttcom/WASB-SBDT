@@ -1,0 +1,16 @@
+name: restracknetv2
+frames_in: 3
+frames_out: 3
+inp_height: 288
+inp_width: 512
+out_height: 288
+out_width: 512
+rgb_diff: False
+out_scales: [0]
+halve_channel: False
+mode: nearest #bilinear
+out_mid_channels: 64
+neck_channels: 64
+blocks: [3, 3, 4, 3]
+channels: [16, 32, 64, 128]
+

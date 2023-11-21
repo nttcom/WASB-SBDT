@@ -12,6 +12,7 @@ https://github.com/nttcom/WASB-SBDT/assets/63090948/8889ef53-62c7-4c97-9b33-8bf3
 
 ## News
 
+- [11/21/2023] Evaluation codes of TrackNetV2, ResTrackNetV2 and MonoTrack are added!
 - [11/17/2023] Repository is released. Now it contains evaluation codes of pretrained WASB models only. Other models will be coming soon!
 - [11/09/2023] Our [arXiv preprint](https://arxiv.org/abs/2311.05237) is released.
 

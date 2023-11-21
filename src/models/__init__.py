@@ -1,14 +1,14 @@
-#from .unet2d import TrackNetV2
-#from .resunet2d import ChangsTrackNet
-#from .monotrack import MonoTrack
+from .unet2d import TrackNetV2
+from .resunet2d import ChangsTrackNet
+from .monotrack import MonoTrack
 from .hrnet import HRNet
 #from .deepball import DeepBall
 #from .segball import SegBall
 
 __factory = {
-    #'tracknetv2': TrackNetV2,
-    #'monotrack': MonoTrack,
-    #'changs': ChangsTrackNet,
+    'tracknetv2': TrackNetV2,
+    'monotrack': MonoTrack,
+    'restracknetv2': ChangsTrackNet,
     'hrnet': HRNet,
     #'deepball': DeepBall,
     #'segball': SegBall
@@ -26,7 +26,7 @@ def build_model(cfg):
         model      = __factory[model_name]( frames_in*3, frames_out, bilinear=bilinear, halve_channel=halve_channel)
     elif model_name=='higher_hrnet' or model_name=='cls_hrnet' or model_name=='hrnet':
         model = __factory[model_name](cfg['model'])
-    elif model_name=='changs':
+    elif model_name=='restracknetv2':
         frames_in        = cfg['model']['frames_in']
         frames_out       = cfg['model']['frames_out']
         halve_channel    = cfg['model']['halve_channel']
