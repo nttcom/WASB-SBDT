@@ -12,6 +12,8 @@ https://github.com/nttcom/WASB-SBDT/assets/63090948/8889ef53-62c7-4c97-9b33-8bf3
 
 ## News
 
+- [11/23/2023] [Our BMVC2023 proceeding](https://proceedings.bmvc2023.org/310/) is available! Thank you, BMVC2023 organizers!
+- [11/23/2023] Evaluation codes of DeepBall, DeepBall-Large and BallSeg are added!
 - [11/21/2023] Evaluation codes of TrackNetV2, ResTrackNetV2 and MonoTrack are added!
 - [11/17/2023] Repository is released. Now it contains evaluation codes of pretrained WASB models only. Other models will be coming soon!
 - [11/09/2023] Our [arXiv preprint](https://arxiv.org/abs/2311.05237) is released.

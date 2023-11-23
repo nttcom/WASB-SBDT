@@ -2,16 +2,16 @@ from .unet2d import TrackNetV2
 from .resunet2d import ChangsTrackNet
 from .monotrack import MonoTrack
 from .hrnet import HRNet
-#from .deepball import DeepBall
-#from .segball import SegBall
+from .deepball import DeepBall
+from .ballseg import BallSeg
 
 __factory = {
     'tracknetv2': TrackNetV2,
     'monotrack': MonoTrack,
     'restracknetv2': ChangsTrackNet,
     'hrnet': HRNet,
-    #'deepball': DeepBall,
-    #'segball': SegBall
+    'deepball': DeepBall,
+    'ballseg': BallSeg
         }
 
 def build_model(cfg):
@@ -57,7 +57,7 @@ def build_model(cfg):
                                        first_conv_kernel_size=first_conv_kernel_size, 
                                        first_conv_stride=first_conv_stride, 
                                        last_conv_kernel_size=last_conv_kernel_size)
-    elif model_name=='segball':
+    elif model_name=='ballseg':
         frames_in     = cfg['model']['frames_in']
         frames_out    = cfg['model']['frames_out']
         scale_factors = cfg['model']['scale_factors']

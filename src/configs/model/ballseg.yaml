@@ -1,0 +1,11 @@
+name: ballseg
+frames_in: 2
+frames_out: 1
+out_scales: [0]
+rgb_diff: True
+inp_height: 576
+inp_width: 1024
+out_height: 576
+out_width: 1024
+backbone: resnet18
+scale_factors: [1, 1, 0.5]

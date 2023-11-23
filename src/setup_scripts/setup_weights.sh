@@ -4,6 +4,27 @@ BASE_DIR=$SCRIPT_DIR/../..
 
 mkdir -p ${BASE_DIR}/pretrained_weights
 
+# deepball
+wget https://drive.google.com/uc?id=1u-Y-RnIgu3H7bZCvv9JVQGkYsBRx0XS9 -O ${BASE_DIR}/pretrained_weights/deepball_soccer_best.pth.tar
+wget https://drive.google.com/uc?id=1h5v5_kUw4c_4Uw7tpKSBSh4bJwlWm8ly -O ${BASE_DIR}/pretrained_weights/deepball_tennis_best.pth.tar
+wget https://drive.google.com/uc?id=1b-D2lrNuUNhZ9OPaLSrIjvU86y0OawFI -O ${BASE_DIR}/pretrained_weights/deepball_badminton_best.pth.tar
+wget https://drive.google.com/uc?id=1mSWsewoBVAG-EdyypkDk1lhIK915wGmo -O ${BASE_DIR}/pretrained_weights/deepball_volleyball_best.pth.tar
+wget https://drive.google.com/uc?id=1fUIVCzcKhfY5UiACF5T8mOpkr1x-Gu5C -O ${BASE_DIR}/pretrained_weights/deepball_basketball_best.pth.tar
+
+# deepball-large
+wget https://drive.google.com/uc?id=1-ak_vi8BiY9FoFVccxpYaJI_qJ6RjOxW -O ${BASE_DIR}/pretrained_weights/deepball-large_soccer_best.pth.tar
+wget https://drive.google.com/uc?id=1hpCH6TM1EvoWmu5JZAkthz141DLgxrgn -O ${BASE_DIR}/pretrained_weights/deepball-large_tennis_best.pth.tar
+wget https://drive.google.com/uc?id=1baHb1dtKHkXwQdGH8PB21hbdNVOu1dT1 -O ${BASE_DIR}/pretrained_weights/deepball-large_badminton_best.pth.tar
+wget https://drive.google.com/uc?id=1tBLqbiokWpO6Xgh_fsNi-1kn0x6qhOHO -O ${BASE_DIR}/pretrained_weights/deepball-large_volleyball_best.pth.tar
+wget https://drive.google.com/uc?id=11ENjf5sAFkw6-jCGSXGfyU0t35axWdGH -O ${BASE_DIR}/pretrained_weights/deepball-large_basketball_best.pth.tar
+
+# ballseg
+wget https://drive.google.com/uc?id=1wbuxL-bKpG-OGVYa7BBeWzmzcHKKIAl5 -O ${BASE_DIR}/pretrained_weights/ballseg_soccer_best.pth.tar
+wget https://drive.google.com/uc?id=14YEAcxwUUgvaL3km07fPSduJLBBNuk_D -O ${BASE_DIR}/pretrained_weights/ballseg_tennis_best.pth.tar
+wget https://drive.google.com/uc?id=1zey7rEX8orvpT0c1qbD5FsQ93jfBmaMl -O ${BASE_DIR}/pretrained_weights/ballseg_badminton_best.pth.tar
+wget https://drive.google.com/uc?id=1FLJVwsupt5FXnPxMu41vPDWwIQBtU9d1 -O ${BASE_DIR}/pretrained_weights/ballseg_volleyball_best.pth.tar
+wget https://drive.google.com/uc?id=1dTV-udhhO4K0651yRd1tfLhLMjh9uuBM -O ${BASE_DIR}/pretrained_weights/ballseg_basketball_best.pth.tar
+
 # tracknetv2
 wget https://drive.google.com/uc?id=1yTCC_8cWnMCLOpErk6UpepzQD9UF8Wpi -O ${BASE_DIR}/pretrained_weights/tracknetv2_soccer_best.pth.tar
 wget https://drive.google.com/uc?id=1BCnmvDX-LZpbkk4vlMEXMm-uzCoqJzDx -O ${BASE_DIR}/pretrained_weights/tracknetv2_tennis_best.pth.tar

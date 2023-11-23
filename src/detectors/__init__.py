@@ -1,9 +1,9 @@
 from .detector import TracknetV2Detector
-#from .deepball_detector import DeepBallDetector
+from .deepball_detector import DeepBallDetector
 
 __factory = {
     'tracknetv2' : TracknetV2Detector,
-    #'deepball': DeepBallDetector
+    'deepball': DeepBallDetector
     }
 
 def build_detector(cfg, model=None):

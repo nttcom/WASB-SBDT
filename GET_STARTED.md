@@ -144,6 +144,63 @@ python3 main.py --config-name=eval dataset=volleyball model=tracknetv2 detector.
 python3 main.py --config-name=eval dataset=basketball model=tracknetv2 detector.postprocessor.use_hm_weight=False detector.model_path=../pretrained_weights/tracknetv2_basketball_best.pth.tar tracker=intra_frame_peak
 ```
 
+### [BallSeg [MMSports2019]](https://arxiv.org/abs/2007.11876)
+
+```
+# Soccer
+python3 main.py --config-name=eval dataset=soccer model=ballseg detector.step=1 detector.postprocessor.use_hm_weight=False detector.model_path=../pretrained_weights/ballseg_soccer_best.pth.tar tracker=intra_frame_peak
+
+# Tennis
+python3 main.py --config-name=eval dataset=tennis model=ballseg detector.step=1 detector.postprocessor.use_hm_weight=False detector.model_path=../pretrained_weights/ballseg_tennis_best.pth.tar tracker=intra_frame_peak
+
+# Badminton
+python3 main.py --config-name=eval dataset=badminton model=ballseg detector.step=1 detector.postprocessor.use_hm_weight=False detector.model_path=../pretrained_weights/ballseg_badminton_best.pth.tar tracker=intra_frame_peak
+
+# Volleyball
+python3 main.py --config-name=eval dataset=volleyball model=ballseg detector.step=1 detector.postprocessor.use_hm_weight=False detector.model_path=../pretrained_weights/ballseg_volleyball_best.pth.tar tracker=intra_frame_peak
+
+# Basketball
+python3 main.py --config-name=eval dataset=basketball model=ballseg detector.step=1 detector.postprocessor.use_hm_weight=False detector.model_path=../pretrained_weights/ballseg_basketball_best.pth.tar tracker=intra_frame_peak
+```
+
+### [DeepBall [VISAPP2019]](https://arxiv.org/abs/1902.07304)
+
+```
+# Soccer
+python3 main.py --config-name=eval dataset=soccer model=deepball detector=deepball detector.model_path=../pretrained_weights/deepball_soccer_best.pth.tar detector.step=1 tracker=intra_frame_peak
+
+# Tennis
+python3 main.py --config-name=eval dataset=tennis model=deepball detector=deepball detector.model_path=../pretrained_weights/deepball_tennis_best.pth.tar detector.step=1 tracker=intra_frame_peak
+
+# Badminton
+python3 main.py --config-name=eval dataset=badminton model=deepball detector=deepball detector.model_path=../pretrained_weights/deepball_badminton_best.pth.tar detector.step=1 tracker=intra_frame_peak
+
+# Volleyball
+python3 main.py --config-name=eval dataset=volleyball model=deepball detector=deepball detector.model_path=../pretrained_weights/deepball_volleyball_best.pth.tar detector.step=1 tracker=intra_frame_peak
+
+# Basketball
+python3 main.py --config-name=eval dataset=basketball model=deepball detector=deepball detector.model_path=../pretrained_weights/deepball_basketball_best.pth.tar detector.step=1 tracker=intra_frame_peak
+```
+
+### [DeepBall-Large](https://arxiv.org/abs/2311.05237)
+
+```
+# Soccer
+python3 main.py --config-name=eval dataset=soccer model=deepball_large detector=deepball detector.model_path=../pretrained_weights/deepball-large_soccer_best.pth.tar detector.step=1 tracker=intra_frame_peak
+
+# Tennis
+python3 main.py --config-name=eval dataset=tennis model=deepball_large detector=deepball detector.model_path=../pretrained_weights/deepball-large_tennis_best.pth.tar detector.step=1 tracker=intra_frame_peak
+
+# Badminton
+python3 main.py --config-name=eval dataset=badminton model=deepball_large detector=deepball detector.model_path=../pretrained_weights/deepball-large_badminton_best.pth.tar detector.step=1 tracker=intra_frame_peak
+
+# Volleyball
+python3 main.py --config-name=eval dataset=volleyball model=deepball_large detector=deepball detector.model_path=../pretrained_weights/deepball-large_volleyball_best.pth.tar detector.step=1 tracker=intra_frame_peak
+
+# Basketball
+python3 main.py --config-name=eval dataset=basketball model=deepball_large detector=deepball detector.model_path=../pretrained_weights/deepball-large_basketball_best.pth.tar detector.step=1 tracker=intra_frame_peak
+```
+
 ## Training
 
 TBA

@@ -1,0 +1,16 @@
+name: deepball
+frames_in: 1
+frames_out: 1
+out_scales: [0]
+class_out: 2
+foreground_channel: 1
+rgb_diff: False
+inp_height: 720
+inp_width: 1280
+out_height: 180
+out_width: 320
+block_channels: [32,64,128]
+block_maxpools: [True, True, True]
+first_conv_kernel_size: 7
+first_conv_stride: 2
+last_conv_kernel_size: 3
